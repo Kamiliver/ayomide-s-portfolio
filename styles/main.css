@@ -81,7 +81,7 @@ section {
     font-size:40px;
     color: var(--Dark-Space-Blue);
     cursor: pointer;
-    display: none;
+    display: block;
 }
 
 #darkMode-icon {
