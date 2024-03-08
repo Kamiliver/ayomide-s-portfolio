@@ -914,15 +914,16 @@ span {
 
     #menu-icon {
         display: block;
-        margin-left: 70%;
+        margin-left: 80%;
+        /* margin-right: auto; */
     }
 
     #darkMode-icon {
-        position: absolute;
+        position: relative;
         right: 70px;
         font-size: 26px;
         color: var(--Dark-Space-Blue);
-        margin-left: 70%;
+        margin-left: 0%;
     }
 
     .navbar {
@@ -994,14 +995,36 @@ span {
         pointer-events: none;
         background: var(--Silver);
         width: 100%;
+        height: 12%;
         opacity: .6;
         z-index: -1;
+    }
+
+    .project-container .project-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 520px) {
     html {
         font-size: 50%;
+        max-width: 100%;
+    }
+
+    .header {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #menu-icon {
+        margin: 0 0 0 65%;
+    }
+
+    body {
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
     }
 
     .home-content h1 {
@@ -1011,6 +1034,13 @@ span {
 }
 
 @media (max-width: 462px) {
+    body {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 0 0 0;
+        position: relative;
+    }
+    
     .home-content h1 {
         font-size: 52px;
     }
@@ -1018,4 +1048,17 @@ span {
     .education {
         padding: 100px 4% 50px 5%;
     }
+
+    .testimonial-container .heading {
+        max-width: 20%;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
 }
+
