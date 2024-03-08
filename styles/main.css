@@ -919,11 +919,11 @@ span {
     }
 
     #darkMode-icon {
-        position: relative;
+        position: absolute;
         right: 70px;
         font-size: 26px;
         color: var(--Dark-Space-Blue);
-        margin-left: 0%;
+        margin-left: 1px;
     }
 
     .navbar {
@@ -1000,9 +1000,26 @@ span {
         z-index: -1;
     }
 
-    .project-container .project-box {
+    /* .project-container .project-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    } */
+
+    .projects .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-container .testimonial-wrapper {
+        padding: 50px 0;
+    }
+
+    .testimonial-content .testimonial-slide {
+        padding: 30px 20px;
+    }
+
+    .testimonial-box .swiper-button-next,
+    .testimonial-box .swiper-button-prev {
+        display: none;
     }
 }
 
@@ -1031,18 +1048,73 @@ span {
         display: flex;
         flex-direction: column;
     }
+
+    .projects .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* .project-container .project-box {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        font-size: 10px;
+    } */
+
+    .project-box .project-layer {
+        /* position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, .1), var(--second-color));
+        color: var(--Almost-White);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        opacity: 0;
+        transition: 0.5 ease; */
+        font-size: 10px;
+    }
+
+    /* .testimonial-container .testimonial-wrapper {
+        padding: 50px 0;
+    }
+
+    .testimonial-content .testimonial-slide {
+        padding: 30px 20px;
+    }
+
+    .testimonial-box .swiper-button-next,
+    .testimonial-box .swiper-button-prev {
+        display: none;
+    } */
 }
 
 @media (max-width: 462px) {
+    html {
+        max-width: 100%;
+        font-size: 50%;
+    }
+    
     body {
         max-width: 100%;
         max-height: 100%;
         margin: 0 0 0 0;
         position: relative;
     }
+
+    #menu-icon {
+        margin: 0 0 0 65%;
+    }
     
     .home-content h1 {
         font-size: 52px;
+    }
+
+    .Ayomide-imgHover {
+        height: 10%;
     }
 
     .education {
@@ -1050,7 +1122,14 @@ span {
     }
 
     .testimonial-container .heading {
-        max-width: 20%;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 40px;
+        max-width: 10%;
+    }
+
+    .heading span {
+        font-size: 10px;
     }
 
     .contact form .input-box .input-field {
@@ -1059,6 +1138,46 @@ span {
 
     .footer {
         flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 371px) {
+    html{
+        max-width: 100%;
+    }
+
+    #menu-icon {
+        margin: 0 0 0 40%;
+    }
+    
+    .home {
+        justify-content: center;
+        padding-top: 75px;
+    }
+    
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .education .heading {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .education .heading span {
+        font-size: 50px;
+    }
+
+    .projects .heading {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
