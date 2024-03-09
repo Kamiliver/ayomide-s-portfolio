@@ -59,5 +59,12 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+});
 
+
+let darkModeIcon = document.querySelector("#darkMode-icon")
+
+darkModeIcon.onclick = () => {
+  darkModeIcon.classList.toggle("bx-sun");
+  document.documentElement.classList.toggle("dark-mode");
+};
