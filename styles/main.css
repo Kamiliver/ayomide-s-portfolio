@@ -16,7 +16,7 @@
     --Almost-White: #fffdfa;
     --Dark-Space-Blue: #00001a;
     --background-image-light: url("../images/Ayomide.jpg");
-    --background-image-dark: url("../images/Ayomide1.jpg");
+    --background-image-dark: url("../images/Ayomide-removebg.png");
     --button-color: #081b29;
     --button-text-color: #00abf0;
     /* --Silver: #c5c6ce; */
@@ -35,6 +35,7 @@
 
 .dark-mode .home {
     background: var(--background-image-dark);
+    position: relative;
 }
 
 .dark-mode .btn-box .btn:nth-child(1):hover {
@@ -78,7 +79,7 @@ html {
 
 body {
     background-color: var(--third-color);
-    color: var(--Almost-White);  
+    /* color: var(--Almost-White);   */
     position: relative;
     max-width: fit-content;
 }
@@ -102,6 +103,7 @@ section {
 }
 
 .logo {
+    position: relative;
     font-size: 25px;
     color: var(--first-color);
     font-weight: 600;
@@ -115,6 +117,7 @@ section {
 }
 
 .navbar {
+    position: relative;
     margin-left: 25%;
 }
 
@@ -132,6 +135,7 @@ section {
 }
 
 #menu-icon {
+    position: relative;
     font-size:40px;
     color: var(--first-color);
     cursor: pointer;
@@ -139,6 +143,7 @@ section {
 }
 
 #darkMode-icon {
+    position: relative;
     font-size: 25px;
     color: var(--first-color);
     cursor: pointer;
@@ -183,12 +188,11 @@ section {
     margin-bottom: 20px;
 }
 
-span {
-    /* color: var(--fourth-color); */
-    font-size: 25px;
+.home-content h3 .multiple-text {
+    color: var(--button-color);
+    font-size: 30px;
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .9px var(--fourth-color);
+    -webkit-text-stroke: .9px #00abf0;
 }
 
 .home-content p {
@@ -318,6 +322,7 @@ span {
 }
 
 .about h2 {
+    position: relative;
     font-size: 50px;
     margin-bottom: 30px;
     text-align: center;
@@ -352,24 +357,30 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
+    width: 110%;
     height: 110%;
     border-radius: 50%;
     border-top: .10px solid var(--third-color);
     border-bottom: .10px solid var(--third-color);
     border-right: .10px solid var(--button-color);
     border-left: .10px solid var(--button-color);
+    animation: aboutSpinner 8s linear infinite;
 }
 
 .about-content {
     text-align: center;
 }
 
-.about-content span {
+.about-content .multiple-text1 {
+    position: relative;
+    display: inline-block;
     font-size: 30px;
+    color: var(--button-color);
+    font-weight: 700;
 }
 
 .about-content p {
+    position: relative;
     font-size: 16px;
     margin: 20px 0 30px;
     color: var(--first-color);
@@ -947,6 +958,43 @@ span {
     color: var(--button-text-color);
 }
 
+/* Animation and scroll */
+.animate {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    z-index: -1;
+}
+
+.animate.Ayomide {
+    width: 50%;
+}
+
+.logo .animate,
+.navbar .animate,
+#menu-icon .animate,
+#darkMode-icon .animate,
+/* .home .animate */
+.home .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
+.animate.scroll {
+    transition: 1s;
+    transition-delay: calc(.3s / var(--i));
+    animation: none;
+    width: 100%;
+}
+
+.about.show-animate .animate.scroll {
+    transition-delay: calc(.3s * var(--i));
+    width: 0;
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -1281,3 +1329,14 @@ span {
     }
 }
 
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
