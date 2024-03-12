@@ -958,43 +958,6 @@ section {
     color: var(--button-text-color);
 }
 
-/* Animation and scroll */
-.animate {
-    position:absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    /* background: red; */
-    z-index: -1;
-}
-
-.animate.Ayomide {
-    width: 50%;
-}
-
-.logo .animate,
-.navbar .animate,
-#menu-icon .animate,
-#darkMode-icon .animate,
-/* .home .animate */
-.home .animate {
-    animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s * var(--i));
-}
-
-.animate.scroll {
-    transition: 1s;
-    transition-delay: calc(.3s / var(--i));
-    animation: none;
-    width: 100%;
-}
-
-.about.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
-    width: 0;
-}
-
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -1335,8 +1298,3 @@ section {
     }
 }
 
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
-}

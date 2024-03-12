@@ -22,13 +22,7 @@ window.onscroll = ()  => {
         links.classList.remove('active');
         document.querySelector("header nav a[href*=" + id + "]").classList.add("active");
       });
-      // active sections for animation  on scroll
-      sec.classList.add("show-animate");
-    }
-    // if u want to use animation that repeats on scroll use this
-    else {
-      sec.classList.remove("show-animate");
-
+      
     }
   });
   let header = document.querySelector("header");
@@ -49,15 +43,6 @@ const typed = new Typed(".multiple-text",  {
 
 // menuIcon.classList.remove('bxs-x-circle');
 // navbar.classList.remove('active');
-
-
-
-
-
-
-
-
-
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -81,3 +66,16 @@ darkModeIcon.onclick = () => {
   darkModeIcon.classList.toggle("bx-sun");
   document.documentElement.classList.toggle("dark-mode");
 };
+
+// scroll reveal
+ScrollReveal({
+  // reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200
+});
+
+ScrollReveal().reveal('.home, .home-content, .heading, .percentage', { origin: "top" });
+ScrollReveal().reveal('.education-content, .skills-column, .project-container, .testimonial-wrapper, .textarea-field, .btn-box.btns', { origin: "bottom" });
+ScrollReveal().reveal('.home-content p, .about-content p, .title, .about-img, .progress, .project-box, .input-box', { origin: "right" });
+ScrollReveal().reveal('.home-content h3', { origin: "left" });

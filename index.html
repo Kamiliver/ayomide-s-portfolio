@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
 
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 
@@ -16,7 +19,7 @@
     <header class="header">
         <a href="#" class="logo">Ayomide.</a>
 
-        <div class='bx bx-menu' id="menu-icon"></div>
+        <div class='bx bx-menu' id="menu-icon"><span class="animate" styles="--i:2;"></span></div>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -27,31 +30,34 @@
             <a href="#contact">Contact</a>
             
             <span class="active-nav"></span>
+            
         </nav>
+        <div class='bx bx-moon' id="darkMode-icon"><span class="animate" styles="--i:2;"></span></div>
+    </header>
             
 
-        <div class='bx bx-moon' id="darkMode-icon"></div>
-    </header>
 
     <section class="home" id="home">
         <div class="home-content">
              <h1>Hi, I'm Ayomide Oluoye</h1>
-             <h3>And I'm a <span>Web developer</span></h3>
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat possimus quae maxime. Aut praesentium quia maiores iste veniam tenetur perferendis vitae inventore. Molestias sit asperiores vel atque quasi sed.</p>
+             <h3>And I'm a <span class="multiple-text"></span></h3>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat possimus quae maxime. Aut praesentium quia maiores iste veniam tenetur perferendis vitae inventore. Molestias sit asperiores vel atque quasi sed.<span class="animate" styles="--i:4;"></span></p>
 
              <div class="btn-box">
                 <a href="#contact" class="btn">Hire Me</a>
                 <a href="#contact" class="btn">Let's Talk</a>
+                
              </div>
              <div class="social-media">  <!--home-sci-->
                  <a href="#"><i class='bx bxl-facebook' ></i></a>
                  <a href="#"><i class='bx bxl-twitter' ></i></a>
                  <a href="https://www.instagram.com/ayomide.8050/"><i class='bx bxl-instagram-alt' ></i></a>
                  <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                 
              </div>
 
-             <div class="Ayomide-imgHover">
-             </div>
+             <div class="Ayomide-imgHover"></div>
+             
         </div>
     </section>
 
@@ -61,14 +67,16 @@
         <div class="about-img">
             <img src="images/Ayomide-1.jpg" alt="">
             <span class="circle-spin"></span>
+            
         </div>
 
         <div class="about-content">
-            <span>Web developer</span>
+            <span class="multiple-text1">Web Developer</span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vel laudantium. Voluptas ipsam porro iure reprehenderit laboriosam? Magnam laborum molestias autem temporibus at sint aperiam ipsum voluptatem. Dolorum dignissimos nulla excepturi deserunt cupiditate suscipit dolores maiores delectus, vel perspiciatis ea esse voluptas, similique nisi nostrum laboriosam dicta, omnis optio. Iste.</p>
 
             <div class="btn-box btns">
                 <a href="#" class="btn">Read More</a>
+                
             </div>
         </div>
     </section>
@@ -279,7 +287,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>                    
                         
-
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
            
     <script src="js/main.js"></script>
 </body>
