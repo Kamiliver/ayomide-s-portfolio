@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -9,6 +11,7 @@ menuIcon.onclick = () => {
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+console.log(navLinks)
 
 window.addEventListener('scroll',  ()  => {
   sections.forEach(sec => {
@@ -18,11 +21,10 @@ window.addEventListener('scroll',  ()  => {
     let id = sec.getAttribute('id')
 
     if(top >= offset && top < offset + height) {
-      navLinks.forEach(links => {
-        links.classList.remove('active');
+      navLinks.forEach(links => { links.classList.remove('active');
         
-      });
-      document.querySelector("header nav a[href*='" + id + "']").classList.add("active");
+ });
+      document.querySelector("header navbar a[href*=" + id + "]").classList.add("active");
     }
   });
   let header = document.querySelector("header");
@@ -79,3 +81,4 @@ ScrollReveal().reveal('.home, .home-content, .heading, .percentage', { origin: "
 ScrollReveal().reveal('.education-content, .skills-column, .project-container, .testimonial-wrapper, .textarea-field, .btn-box.btns', { origin: "bottom" });
 ScrollReveal().reveal('.home-content p, .about-content p, .title, .about-img, .progress, .project-box, .input-box', { origin: "right" });
 ScrollReveal().reveal('.home-content h3', { origin: "left" });
+});
