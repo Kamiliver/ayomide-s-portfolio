@@ -9,18 +9,17 @@
 
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 
 <body>
+    <div class="container">
     <header class="header">
         <a href="#" class="logo">Ayomide.</a>
-
-        <div class='bx bx-menu' id="menu-icon"><span class="animate" styles="--i:2;"></span></div>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -32,16 +31,19 @@
             
             <span class="active-nav"></span>  
         </nav>
-
-        <div class='bx bx-moon' id="darkMode-icon"><span class="animate" styles="--i:2;"></span></div>
+        
+        <div class="icons">
+            <div class='bx bx-moon' id="darkMode-icon"><span class="animate" styles="--i:2;"></span></div>
+            <div class='bx bx-menu' id="menu-icon"><span class="animate" styles="--i:2;"></span></div>
+        </div>
     </header>
             
 
 
     <section class="home" id="home">
         <div class="home-content">
-             <h1>Hi, I'm Ayomide Oluoye</h1>
-             <h3>And I'm a <span class="multiple-text"></span></h3>
+             <h1 id="Hi">Hi, I'm Ayomide Oluoye</h1>
+             <h3 id="multiple-text">And I'm a <span class="multiple-text"></span></h3>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat possimus quae maxime. Aut praesentium quia maiores iste veniam tenetur perferendis vitae inventore. Molestias sit asperiores vel atque quasi sed.<span class="animate" styles="--i:4;"></span></p>
 
              <div class="btn-box">
@@ -226,7 +228,7 @@
         <div class="testimonial-wrapper">
             <div class="testimonial-box mySwiper">
                 <div class="testimonial-content swiper-wrapper">
-                    <div class="testimonial-slide swiper-slide">
+                    <div  class="testimonial-slide swiper-slide">
                         <img src="images/testimonial-1.webp" alt="">
                         <h3>Maverick</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil asperiores rerum explicabo accusamus voluptate dolores. Nostrum autem numquam quaerat corporis quibusdam fuga architecto nam alias consequatur minima inventore debitis a eveniet corrupti culpa reprehenderit ut exercitationem perferendis est, dolorem iusto cumque sit. Debitis, in modi obcaecati temporibus dolores illo error ducimus inventore consequuntur reiciendis cum, et minima totam velit odit?</p>
@@ -291,7 +293,7 @@
             </div>
         </form>
     </section>
-
+    </div>
     <footer class="footer">
         <div class="footer-iconTop">
             <a href="#"><i class='bx bxs-up-arrow'></i></a>
