@@ -4,20 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayomide Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/loader.css">
 
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
 
     <script src="js/main.js" defer></script>
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+    <script src="js/loader.js"></script>
     
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="container">
+    <div id="loader">
+        <div class="fingerprint"></div>
+    </div>
+<div class="portfolio-content" >
     <header class="header">
         <a href="#" class="logo">Ayomide.</a>
 
@@ -32,38 +39,36 @@
             <span class="active-nav"></span>  
         </nav>
         
-        <div class="icons">
-            <div class='bx bx-moon' id="darkMode-icon"><span class="animate" styles="--i:2;"></span></div>
-            <div class='bx bx-menu' id="menu-icon"><span class="animate" styles="--i:2;"></span></div>
-        </div>
+        <!-- <div class='bx bx-moon'  id="darkMode-icon"><span class="animate" styles="--i:2;"></span></div> -->
+        <div class='bx bx-menu' id="menu-icon"></div>
     </header>
             
 
 
     <section class="home" id="home">
         <div class="home-content">
-             <h1 id="Hi">Hi, I'm Ayomide Oluoye</h1>
-             <h3 id="multiple-text">And I'm a <span class="multiple-text"></span></h3>
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat possimus quae maxime. Aut praesentium quia maiores iste veniam tenetur perferendis vitae inventore. Molestias sit asperiores vel atque quasi sed.<span class="animate" styles="--i:4;"></span></p>
+             <h1>Hi, I'm <span>Ayomide Oluoye</span></h1>
+             <h3>And I'm a <span class="text-animate">Web Developer</span></h3>
+             <p>I am a versatile creative powerhouse, excelling as both a skilled web developer and a talented graphic designer. With a keen eye for aesthetics and a knack for code, I craft visually stunning websites that seamlessly marry form and function. My passion for design and technology drives me to continuously innovate, leaving a lasting impact on the digital landscape.</p>
 
              <div class="btn-box">
                 <a href="#contact" class="btn">Hire Me</a>
                 <a href="#contact" class="btn">Let's Talk</a>
-                
              </div>
-             <div class="social-media">  <!--home-sci-->
+                
+             <div class="social-media">
                  <a href="#"><i class='bx bxl-facebook' ></i></a>
                  <a href="#"><i class='bx bxl-twitter' ></i></a>
                  <a href="https://www.instagram.com/ayomide.8050/"><i class='bx bxl-instagram-alt' ></i></a>
                  <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                 
              </div>
+                 
              
         </div>
     </section>
 
     <section class="about" id="about">
-        <h2 class="heading">About <span class="Me">Me</span></h2>
+        <h2 class="heading">About <span>Me</span></h2>
 
         <div class="about-img">
             <img src="images/Ayomide-1.jpg" alt="">
@@ -72,8 +77,8 @@
         </div>
 
         <div class="about-content">
-            <span class="multiple-text1">Web Developer</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vel laudantium. Voluptas ipsam porro iure reprehenderit laboriosam? Magnam laborum molestias autem temporibus at sint aperiam ipsum voluptatem. Dolorum dignissimos nulla excepturi deserunt cupiditate suscipit dolores maiores delectus, vel perspiciatis ea esse voluptas, similique nisi nostrum laboriosam dicta, omnis optio. Iste.</p>
+            <span class="text-animate">Web Developer</span>
+            <p>My journey into the tech world began with an insatiable curiosity and a drive to learn. My early experiences navigating the intricacies of coding and design sparked a flame of creativity and problem-solving. Motivated by a desire to constantly improve and innovate, I seek out new challenges and opportunities to push the boundaries of what's possible in the digital realm. With each project, I strive to not only meet but exceed expectations, leaving a trail of innovation and excellence.</p>
 
             <div class="btn-box btns">
                 <a href="#" class="btn">Read More</a>
@@ -83,7 +88,7 @@
     </section>
 
     <section class="education" id="education">
-        <h2 class="heading">My <span class="Journey">Journey</span></h2>
+        <h2 class="heading">My <span>Journey</span></h2>
 
         <div class="education-row">
             <div class="education-column">
@@ -92,9 +97,9 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2007-2024</div>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2013-2017</div>
                             <h3>Middle School</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nulla tempore optio ratione nobis, iure modi quisquam minima consequuntur, cumque atque dolor omnis ex sed voluptatibus quidem inventore fugiat incidunt consectetur natus voluptatem neque placeat eligendi! Dicta aspernatur quibusdam asperiores.</p>
+                            <p>In the halls of Ladybird Educational Centre, my fascination for technology sparked like a newly lit flame. Amidst textbooks and eager classmates, I embarked on a journey of discovery, my curiosity serving as both compass and guide. With nimble fingers and a determined spirit, I meticulously crafted my first light bulb, a beacon of my burgeoning passion for innovation. In those formative years, amidst circuits and soldering irons, I found not just a hobby, but a calling—a luminous path leading towards a future shaped by my boundless creativity and ingenuity.                            </p>
                         </div>
                     </div>
                         
@@ -228,7 +233,7 @@
         <div class="testimonial-wrapper">
             <div class="testimonial-box mySwiper">
                 <div class="testimonial-content swiper-wrapper">
-                    <div  class="testimonial-slide swiper-slide">
+                    <div class="testimonial-slide swiper-slide">
                         <img src="images/testimonial-1.webp" alt="">
                         <h3>Maverick</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil asperiores rerum explicabo accusamus voluptate dolores. Nostrum autem numquam quaerat corporis quibusdam fuga architecto nam alias consequatur minima inventore debitis a eveniet corrupti culpa reprehenderit ut exercitationem perferendis est, dolorem iusto cumque sit. Debitis, in modi obcaecati temporibus dolores illo error ducimus inventore consequuntur reiciendis cum, et minima totam velit odit?</p>
@@ -293,18 +298,26 @@
             </div>
         </form>
     </section>
-    </div>
     <footer class="footer">
         <div class="footer-iconTop">
             <a href="#"><i class='bx bxs-up-arrow'></i></a>
         </div>
-    </footer>          
+    </footer>  
+</div>    
+    
+    <!-- <script>
+        var loader = document.getElementsById("loader");
+
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.display = "none";
+            }, 1500);
+        })
+    </script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>                    
                         
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-           
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </div>       
 </body>
 </html>
