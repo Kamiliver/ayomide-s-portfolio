@@ -67,6 +67,16 @@
 // ScrollReveal().reveal('.home-content h3', { origin: "left" });
 // })
 
+//menu icon navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bxs-x-circle');
+    navbar.classList.toggle('active');
+  
+  }
+
 // scroll sections
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -86,9 +96,14 @@ window.onscroll = () => {
         };
      });
   // sticky header
-  let header = document.querySelector('header');
+  let header = document.querySelector('.header');
 
   header.classList.toggle('sticky', window.scrollY > 100);
+
+
+//remove menu icon navbar when click navbar link
+menuIcon.classList.remove('bxs-x-circle');
+navbar.classList.remove('active');
 }
 
 var swiper = new Swiper(".mySwiper", {
@@ -105,3 +120,13 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// scroll reveal
+ScrollReveal({
+  reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 200
+});
+
+ScrollReveal().reveal('.home, .heading', { origin: 'left' });
