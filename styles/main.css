@@ -343,6 +343,25 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: professionRotate 13s ease-out infinite;
+}
+
+@keyframes professionRotate {
+    0%,20% {
+        transform: rotate(0deg);
+    }
+    25%,45% {
+        transform: rotate(-90deg);
+    }
+    50%,70% {
+        transform: rotate(-180deg);
+    }
+    75%,95% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 .home .profession-box .profession {
@@ -411,7 +430,7 @@ section {
 #bg-video {
     position: absolute;
     top: 25%;
-    left: 61%;
+    left: 63%;
     width: 50%;
     height: 60%;
     border-top-left-radius: 20%;

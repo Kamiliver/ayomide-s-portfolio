@@ -129,4 +129,6 @@ ScrollReveal({
   delay: 200
 });
 
-ScrollReveal().reveal('.home, .heading', { origin: 'left' });
+ScrollReveal().reveal(' .heading, .percentage', { origin: 'top' });
+ScrollReveal().reveal('.education-content, .skills-column, .project-container, .testimonial-wrapper, .textarea-field, .btn-box.btns', { origin: 'bottom' });
+ScrollReveal().reveal('.about-content p, .title, .about-img, .progress, .project-box, .input-box', { origin: "right" });

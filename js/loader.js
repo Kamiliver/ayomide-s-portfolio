@@ -10,4 +10,4 @@ function hideLoader() {
   }
   
   // Set a timeout to hide the loader after 3 seconds (adjust as needed)
-  setTimeout(hideLoader, 3000)
+  setTimeout(hideLoader, 5000)
