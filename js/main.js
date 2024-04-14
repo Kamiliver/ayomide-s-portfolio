@@ -108,7 +108,7 @@ navbar.classList.remove('active');
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  spaceBetween: 50,
+  spaceBetween: 10,
   loop: true,
   grabCursor: true,
   pagination: {
@@ -122,13 +122,13 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // scroll reveal
-ScrollReveal({
-  reset: true,
-  distance: '80px',
-  duration: 2000,
-  delay: 200
-});
+// ScrollReveal({
+//   reset: true,
+//   distance: '80px',
+//   duration: 2000,
+//   delay: 200
+// });
 
-ScrollReveal().reveal(' .heading, .percentage', { origin: 'top' });
-ScrollReveal().reveal('.education-content, .skills-column, .project-container, .testimonial-wrapper, .textarea-field, .btn-box.btns', { origin: 'bottom' });
-ScrollReveal().reveal('.about-content p, .title, .about-img, .progress, .project-box, .input-box', { origin: "right" });
+// ScrollReveal().reveal(' .heading, .percentage', { origin: 'top' });
+// ScrollReveal().reveal('.education-content, .skills-column, .project-container, .testimonial-wrapper, .textarea-field, .btn-box.btns', { origin: 'bottom' });
+// ScrollReveal().reveal('.about-content p, .title, .about-img, .progress, .project-box, .input-box', { origin: "right" });

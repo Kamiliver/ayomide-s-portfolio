@@ -94,7 +94,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 1440px;
     padding: 32px;
     display: flex;
     align-items: center;
@@ -121,20 +121,11 @@ section {
     color: var(--fourth-color);
 }
 
-/* .icons {
-    display: none;
-} */
-
-/* .navbar {
-    position: relative;
-    justify-content: space-between;
-} */
-
 .navbar a {
     font-size: 15px;
     color: aliceblue;
     font-weight: bold;
-    margin-right: 56px;
+    margin-right: 50px;
     transition: .3s;
 }
 
@@ -1132,14 +1123,21 @@ section {
 @media (max-width: 1024px) {
     .header {
         padding: 2rem 3%;
+        display: none;
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        /* padding: 10rem 3% 2rem; */
+        max-width: 1024px;
     }
+
+    /* #h3 {
+        top: 20%;
+    } */
 
     .home .profession-container .profession-box {
         right: -22rem;
+        border-color: red;
     }
 
     .home .profession-container .overlay {
@@ -1149,15 +1147,18 @@ section {
 
 @media (max-width: 991px) {
     .home .home-content {
-        max-width: 50rem;
+        /* position: relative; */
+        /* max-width: 50rem; */
+        /* bottom: 10%; */
     }
 
     .home .profession-container .profession-box {
-        right: -45rem;
+        right: -50rem;
     }
 
     .home .profession-container .overlay {
-        right: -39.5rem;
+        right: -40.5rem;
+        z-index: 100;
     }
 
     #bg-video {
@@ -1168,9 +1169,7 @@ section {
     }
 
     section {
-        padding: 100px 20px;
-        width: 100vh;
-        width: 100vw; /* Set height to 100% of the viewport height */
+        max-width: 991px; /* Set height to 100% of the viewport height */
     }
 
     .footer {
@@ -1183,11 +1182,16 @@ section {
         max-width: 768px;
     }
 
+    section {
+        max-width: 768px; /* Set height to 100% of the viewport height */
+    }
+
+    /* #h3 {
+        top: 20%;
+    }
+
     #menu-icon {
         display: block;
-        /* margin-left: 80%; */
-        /* align-self: flex-end; */
-        /* margin-right: auto; */
     }
 
     .navbar {
@@ -1216,7 +1220,6 @@ section {
         width: 100%;
         height: 100%;
         background: silver;
-        /* border-top: 1px solid rgba(0, 0, 0, .2); */
         z-index: -1;
         transition: .25s ease;
         transition-delay: 0s;
@@ -1231,10 +1234,8 @@ section {
         display: block;
         font-size: 20px;
         margin: 30px 0;
-        /* transform: translateX(200px); */
         transition: .25s ease;
         transition-delay: 0s;
-        /* color: #081b29; */
     }
 
     .navbar.active a {
@@ -1244,17 +1245,17 @@ section {
 
     .navbar a.active {
         color: #00abf0;
-    }
+    } */
 
     .btn-box .btn{
         left: 10%;
     }
 
     .home {
-        /* padding: 0 4% 15rem; */
+        padding: 0 4% 15rem;
         justify-content: center;
         text-align: center;
-        max-height: 20%;
+        /* max-height: 20%; */
     }
 
     .home-content h3 {
@@ -1278,12 +1279,12 @@ section {
         left: 0;
         border-radius: 0;
         width: 100%;
-        align-items: center;
+        /* align-items: center; */
         padding: none;
     }
 
     .home .profession-box .profession {
-        padding: 0 50px;
+        /* padding: 0 50px; */
         left: auto;
         transform-origin: 0;
     }
@@ -1323,8 +1324,8 @@ section {
 
     .home .profession-box .circle {
         position: fixed;
-        width: 670px;
-        height: 670px;
+        width: 600px;
+        height: 600px;
         z-index: -1;
     }
 
@@ -1334,6 +1335,7 @@ section {
         left: 50%;
         margin-top: 10%;
         right: 0;
+        display: none;
         height: 100%;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         /* border-width: 23.9rem; */
@@ -1364,7 +1366,7 @@ section {
 }
 
 @media (max-width: 617px) {
-    body {
+    /* body {
         height: auto;
         margin: 0 0 0 0;
     }
@@ -1376,7 +1378,7 @@ section {
     .home .profession-container .overlay {
         display: none;
         top: 30%;
-    }
+    } */
 
     .projects .project-container {
         grid-template-columns: 1fr;
@@ -1402,7 +1404,9 @@ section {
     }
 
     .home .profession-box .profession {
-        top: 55%;
+        /* top: 55%; */
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .home .profession-box .profession h3{
@@ -1410,23 +1414,23 @@ section {
     }
 
     .home .profession-box .circle {
-        top: 90%;
+        /* top: 90%; */
     }
 
     .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-110px, -220px);
+        transform: rotate(-90deg) translate(-90px, -210px);
     }
     
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(5px, -335px);
+        transform: rotate(0deg) translate(10px, -310px);
     }
     
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
+        transform: rotate(90deg) translate(-90px, -410px);
     }
     
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -335px);
+        transform: rotate(180deg) translate(-210px, -310px);
     }
 
     .social-media a {
@@ -1481,7 +1485,14 @@ section {
     
     .home {
         justify-content: center;
-        padding-top: 75px;
+        /* padding-top: 75px; */
+    }
+
+    .social-media {
+        position: absolute;
+        bottom: 28%;
+        left: 0;
+        right: 0;
     }
 
     .education .heading {
