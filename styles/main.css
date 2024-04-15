@@ -234,7 +234,7 @@ section {
     font-weight: 600;
     letter-spacing: .1px;
     color: var(--first-color);
-    /* z-index: 1; */
+    z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
@@ -263,8 +263,8 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--button-color);
-    /* z-index: -1; */
+    background: #112e42;
+    z-index: -1;
     transition: .5s;
 }
 
@@ -608,7 +608,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: #112e42;
+    background: var(--button-color);
     z-index: -1;
     transition: .5s;
 }
@@ -695,7 +695,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: #112e42;
+    background: var(--button-color);
     z-index: -1;
     transition: .5s;
 }
@@ -738,19 +738,19 @@ section {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 66%;
+    width: 85%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 70%;
+    width: 78%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 65%;
+    width: 71%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 78%;
+    width: 88%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
@@ -1003,7 +1003,7 @@ section {
     height: 100%;
     padding: 15px;
     font-size: 16px;
-    color: var(--button-color);
+    color: var(--button-text-color);
     background: transparent;
     border-radius: 5px;
     border: 1px solid var(--button-text-color);
@@ -1020,7 +1020,7 @@ section {
     left: 0;
     width: 0%;
     height: 100%;
-    background: #112e42;
+    background: var(--button-color);
     border-radius: 5px;
     z-index: -1;
     transition: .5s;
