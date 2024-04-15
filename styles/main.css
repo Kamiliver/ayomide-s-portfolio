@@ -1394,6 +1394,10 @@ section {
         font-size: 50%;
     }
 
+    #loader {
+        display: flex;
+    }
+
     .header {
         max-width: 100%;
         height: auto;
